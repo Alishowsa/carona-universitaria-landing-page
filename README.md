@@ -12,7 +12,7 @@ Este projeto foi desenvolvido como um MVP para validar a ideia de um sistema de 
 - Vite
 - JavaScript
 - CSS
-- React
+  
 
 ## 🚀 Como rodar
 
