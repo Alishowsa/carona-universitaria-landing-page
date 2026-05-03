@@ -8,7 +8,7 @@ Este projeto foi desenvolvido como um MVP para validar a ideia de um sistema de 
 
 ## 🛠 Tecnologias
 
-- React --
+- React 
 - Vite
 - JavaScript
 - CSS
