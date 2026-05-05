@@ -76,11 +76,6 @@ export default function LandingPageCaronaUniversitaria() {
                 <p>Gratuito</p>
               </div>
 
-              <div className="bg-white/5 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-md">
-                <p className="text-3xl font-black text-purple-200">24h</p>
-                <p>Conexões rápidas</p>
-              </div>
-
             </div>
 
           </div>
@@ -123,30 +118,81 @@ export default function LandingPageCaronaUniversitaria() {
 
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* GRID DOS CARDS */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
 
-          <div className="bg-white/5 border border-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:scale-105 transition duration-300">
-            <div className="text-5xl mb-4">💰</div>
-            <h3 className="text-2xl font-bold mb-3">Economia</h3>
-            <p className="text-gray-300">
-              Divida gastos de combustível e reduza custos.
-            </p>
+          {/* CARD 1 */}
+          <div className="bg-white/5 border border-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:scale-105 transition duration-300 h-full flex flex-col justify-between">
+
+            <div>
+              <div className="text-5xl mb-4">💰</div>
+
+              <h3 className="text-2xl font-bold mb-3">
+                Economia
+              </h3>
+
+              <p className="text-gray-300">
+                Divida gastos de combustível e reduza custos.
+              </p>
+            </div>
+
           </div>
 
-          <div className="bg-white/5 border border-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:scale-105 transition duration-300">
-            <div className="text-5xl mb-4">⏰</div>
-            <h3 className="text-2xl font-bold mb-3">Praticidade</h3>
-            <p className="text-gray-300">
-              Encontre colegas com rotas parecidas.
-            </p>
+          {/* CARD 2 */}
+          <div className="bg-white/5 border border-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:scale-105 transition duration-300 h-full flex flex-col justify-between">
+
+            <div>
+              <div className="text-5xl mb-4">⏰</div>
+
+              <h3 className="text-2xl font-bold mb-3">
+                Praticidade
+              </h3>
+
+              <p className="text-gray-300">
+                Encontre colegas com rotas parecidas.
+              </p>
+            </div>
+
           </div>
 
-          <div className="bg-white/5 border border-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:scale-105 transition duration-300">
-            <div className="text-5xl mb-4">🌱</div>
-            <h3 className="text-2xl font-bold mb-3">Sustentabilidade</h3>
-            <p className="text-gray-300">
-              Menos carros = menos poluição.
-            </p>
+          {/* CARD 3 */}
+          <div className="bg-white/5 border border-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:scale-105 transition duration-300 h-full flex flex-col justify-between">
+
+            <div>
+              <div className="text-5xl mb-4">🌱</div>
+
+              <h3 className="text-2xl font-bold mb-3">
+                Sustentabilidade
+              </h3>
+
+              <p className="text-gray-300">
+                Menos carros = menos poluição.
+              </p>
+            </div>
+
+          </div>
+
+          {/* CARD 4 */}
+          <div className="bg-white/5 border border-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:scale-105 transition duration-300 h-full flex flex-col justify-between">
+
+            <div>
+              <div className="text-5xl mb-4">⏱️</div>
+
+              <h3 className="text-2xl font-bold mb-3">
+                Economize tempo
+              </h3>
+
+              <p className="text-gray-300 mb-4">
+                Rotas diretas ajudam você a chegar mais rápido e evitar longas esperas.
+              </p>
+
+              <ul className="text-sm text-gray-400 space-y-2">
+                <li>✔ Menos tempo no trânsito</li>
+                <li>✔ Mais tempo para estudar</li>
+                <li>✔ Mais conforto e segurança</li>
+              </ul>
+            </div>
+
           </div>
 
         </div>
