@@ -29,11 +29,10 @@ h1 span { display: inline; background: linear-gradient(transparent 67%, var(--br
 .hero-note { color: var(--muted); font-size: .875rem; margin-top: 1.25rem; }
 .hero-note span { margin-right: .4rem; color: var(--ink); }
 .brand-panel { background: white; border: 1px solid var(--line); border-radius: 1.25rem; padding: 1.25rem 1.5rem; box-shadow: 0 18px 45px #19191906; }
-.panel-caption { display: flex; justify-content: space-between; align-items: center; font-size: .6875rem; font-weight: 700; letter-spacing: .15em; }
-.panel-caption > span:last-child { font-size: 1.5rem; color: #805a00; }
-.hero-logo { width: 100%; }
-.panel-bottom { padding-top: 1rem; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: .15rem .5rem; justify-content: space-between; font-size: .8125rem; color: var(--muted); }
-.panel-bottom strong { color: var(--ink); }
+.qr-panel { width: 100%; max-width: 340px; justify-self: center; padding: 2rem; text-align: center; }
+.hero-qr { display: block; width: 176px; height: auto; max-width: 100%; margin-inline: auto; background: #fff; }
+.qr-panel h2 { margin-top: 1.25rem; font-size: 1.25rem; line-height: 1.4; letter-spacing: -.02em; }
+.qr-panel p { margin-top: .6rem; color: var(--muted); font-size: .875rem; line-height: 1.7; }
 .purpose-strip { background: var(--ink); color: #fff; padding-block: 2rem; }
 .purpose-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .purpose-inner p:first-child { font-size: 1.15rem; line-height: 1.6; }
@@ -98,7 +97,7 @@ h3 { font-weight: 700; font-size: 1.15rem; letter-spacing: -.02em; line-height: 
   .hero-grid, .how-grid, .return-grid, .cta-panel { grid-template-columns: minmax(0, 1fr); }
   h1 { font-size: clamp(2.6rem, 8vw, 3.8rem); }
   .hero-description { font-size: 1rem; }
-  .brand-panel { width: 100%; max-width: 430px; margin: 1rem auto 0; }
+  .brand-panel { max-width: 340px; margin: 0 auto; }
   .section-heading { display: block; }
   .section-heading > p { margin-top: 1rem; }
   .purpose-inner { display: grid; gap: 1.25rem; }
@@ -115,5 +114,4 @@ h3 { font-weight: 700; font-size: 1.15rem; letter-spacing: -.02em; line-height: 
   .button-compact { padding-inline: .75rem; font-size: .8125rem; gap: .4rem; }
   .cta-panel { padding: 1.5rem; }
   .cta-action .button { width: 100%; font-size: .9375rem; padding-inline: .75rem; }
-  .panel-bottom { font-size: .75rem; }
 }

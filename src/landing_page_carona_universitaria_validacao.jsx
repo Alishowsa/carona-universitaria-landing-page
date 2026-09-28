@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { QRCodeSVG } from "qrcode.react";
 import "./App.css";
 
 const pesquisaUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdVrCn4sX8uMV6TSP5HJ1MeqRAtFMN6-PAx-8y8ctRXDMV3oQ/viewform";
@@ -53,11 +54,18 @@ export default function LandingPageCaronaUniversitaria() {
               <div className="hero-actions"><PesquisaLink /><a className="button button-secondary" href="#beneficios">Ver benefícios</a></div>
               <p className="hero-note"><span aria-hidden="true">✓</span> Projeto universitário em desenvolvimento</p>
             </div>
-            <div className="brand-panel">
-              <div className="panel-caption"><span>CONEXÕES QUE MOVEM</span><span aria-hidden="true">↗</span></div>
-              <img className="hero-logo" src="/logo-carona.webp" alt="Carona Universitária — Juntos no mesmo caminho" width="1254" height="1254" fetchPriority="high" />
-              <div className="panel-bottom"><span>Na ida e na volta das aulas.</span><strong>Com mais companhia.</strong></div>
-            </div>
+            <aside className="brand-panel qr-panel" aria-labelledby="qr-title">
+              <QRCodeSVG
+                className="hero-qr"
+                value={import.meta.env.VITE_CARONA_URL || window.location.href.split("#")[0]}
+                size={176}
+                level="M"
+                marginSize={4}
+                title="QR Code para acessar o Carona Universitária pelo celular"
+              />
+              <h2 id="qr-title">Acesse pelo celular</h2>
+              <p>Escaneie o QR Code e acesse o Carona Universitária pelo seu celular.</p>
+            </aside>
           </div>
         </section>
 
